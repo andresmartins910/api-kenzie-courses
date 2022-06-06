@@ -1,9 +1,18 @@
-import {courseSchema,courseUpdateSchema,serializedCourseSchema} from "./courses/create.schema"
-import serializedStudentsCoursesSchema from "./courses/getAll.Students.schema"
-import serializedAdminCoursesSchema from "./courses/getAll.schema"
-import {createUserSchema, serializedCreateUserSchema, userUpdateSchema} from "./user/create.schema"
-import serializedAdminUsersSchema from "./user/getAll.schema"
-import loginUserSchema from "./user/login.schema"
+import {
+  courseSchema,
+  courseUpdateSchema,
+  serializedCourseSchema,
+} from "./courses/create.schema";
+import serializedStudentsCoursesSchema from "./courses/getAll.Students.schema";
+import serializedAdminCoursesSchema from "./courses/getAll.schema";
+import {
+  createUserSchema,
+  serializedCreateUserSchema,
+  userUpdateSchema,
+} from "./user/create.schema";
+import serializedAdminUsersSchema from "./user/getAll.schema";
+import loginUserSchema from "./user/login.schema";
+import registerCourseToUserSchema from "./courses/registerCourseToUser.schema";
 
 export {
   loginUserSchema,
@@ -12,8 +21,9 @@ export {
   courseSchema,
   courseUpdateSchema,
   serializedCourseSchema,
-  createUserSchema, 
-  serializedCreateUserSchema, 
+  createUserSchema,
+  serializedCreateUserSchema,
   userUpdateSchema,
-  serializedAdminUsersSchema
-}
+  serializedAdminUsersSchema,
+  registerCourseToUserSchema,
+};

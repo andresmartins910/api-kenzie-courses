@@ -3,10 +3,7 @@ import {
   Entity,
   PrimaryGeneratedColumn,
   Column,
-  CreateDateColumn,
-  UpdateDateColumn,
   ManyToMany,
-  JoinTable
 } from "typeorm";
 import { Course } from "./Course.entity";
 

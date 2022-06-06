@@ -1,7 +1,15 @@
 import { Router } from "express";
 import { courseController } from "../controllers";
-import { validateSchema, validateToken, verifyPermission } from "../middlewares";
-import { courseSchema, courseUpdateSchema } from "../schemas";
+import {
+  validateSchema,
+  validateToken,
+  verifyPermission,
+} from "../middlewares";
+import {
+  courseSchema,
+  courseUpdateSchema,
+  registerCourseToUserSchema,
+} from "../schemas";
 
 const courseRouter = Router();
 
@@ -12,6 +20,13 @@ courseRouter.post(
   verifyPermission,
   validateSchema(courseSchema),
   courseController.createCourse
+);
+courseRouter.post(
+  "/courses/register",
+  validateToken,
+  verifyPermission,
+  validateSchema(registerCourseToUserSchema),
+  courseController.registerCourseToUser
 );
 courseRouter.patch(
   "/courses/:id",
