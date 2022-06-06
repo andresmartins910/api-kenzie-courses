@@ -1,6 +1,6 @@
 # **Entrega KenzieCourses**
 
-> ## Nesta entrega você irá criar ***Testes*** para todas as rotas, além de aplicar seus conhecimentos em ***Docker***, ***Relacionamentos***, envio de emails com ***NodeMailer*** e documentação com ***Swagger***.
+> ## Nesta entrega você irá criar ***Testes*** para todas as rotas, além de aplicar seus conhecimentos em ***Docker***, ***Relacionamentos*** e envio de emails com ***NodeMailer***.
 
 </br>
 
@@ -10,7 +10,6 @@
 * Fazer com que um email seja disparado para o student após a inscrição no curso, contendo um template com informações do curso (courseName e duration).
 * Dockerizar a aplicação com docker compose.
 * Criar testes para todas as rotas.
-* No final, porém não menos importante, criar a documentação da API utilizando Swagger. 
 
 </br>
 
